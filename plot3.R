@@ -12,7 +12,7 @@ if(!file.exists("./data/Electric.txt")){
 	subMetering2 <- as.numeric(subData$Sub_metering_2)
 	subMetering3 <- as.numeric(subData$Sub_metering_3)
 
-	png("./figure/plot3.png", width=480, height=480)
+	png("./results/plot3.png", width=480, height=480)
 	plot(date_time, subMetering1, type="l", ylab="Energy Submetering", xlab="")
 	lines(date_time, subMetering2, type="l", col="red")
 	lines(date_time, subMetering3, type="l", col="blue")

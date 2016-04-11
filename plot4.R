@@ -12,7 +12,7 @@ if(!file.exists("./data/Electric.txt")){
 	subMetering1 <- as.numeric(subData$Sub_metering_1)
 	subMetering2 <- as.numeric(subData$Sub_metering_2)
 	subMetering3 <- as.numeric(subData$Sub_metering_3)
-    png("./figure/plot4.png", width=480, height=480)
+    png("./results/plot4.png", width=480, height=480)
 	par(mfrow = c(2, 2)) 
 
 	plot(date_time, globalActivePower, type="l", xlab="", ylab="Global Active Power", cex=0.2)
